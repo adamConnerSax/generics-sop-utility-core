@@ -1,0 +1,28 @@
+name:                generics-sop-utility-core
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/adamConnerSax/generics-sop-utility-core#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Adam Conner-Sax
+maintainer:          adam_conner_sax@yahoo.com
+copyright:           2015 Adam Conner-Sax
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Generics.SOP.DMapUtilities
+                       Generics.SOP.Distribute
+  build-depends:       base >= 4.7 && < 5
+                     , generics-sop
+                     , dependent-sum
+                     , dependent-map
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/adamConnerSax/generics-sop-utility-core
